@@ -14,14 +14,12 @@ body{
 	overflow-x:hidden;
 	font-family: poppins;
 	
-
 }
 #footer{
-	background: #f7f7f7;
+	background: #dc3545 ;
     padding: 2rem;
 	/* padding-top: 5rem; */
     padding-bottom: 80px;
-	background-image: url(https://arena.km.ua/wp-content/uploads/3538533.jpg);
     background-size: 90% 90%;
     height: 250px;
 }
@@ -32,7 +30,6 @@ body{
     margin-top: 0px;
 	/* padding-top: 5rem; */
     padding-bottom: 80px;
-	background-image: url(../images/cards/v748-toon-111.png);
 }
 .logo-footer{
 	/* max-width: 300px; */
@@ -68,7 +65,7 @@ body{
     border-radius: 3px;
 	color: #82074a; */
 	/* margin-right: 18px; */
-	color: #777777;
+	color: white;
 }
 .social-icons a:hover{
 	color: #000;
@@ -101,10 +98,9 @@ li{
     color: #898989;
 }
 .use-links li a{
-	color: #303030;
+	color: white;
     font-size: 15px;
     font-weight: 500;
-	color: #777777;
 }
 .use-links li a:hover{
 	color: #000;
@@ -118,11 +114,9 @@ li{
 	padding-bottom: 15px;
 }
 .address-links li a{
-	color: #303030;
+	color: white;
     font-size: 15px;
     font-weight: 500;
-	color: #777777;
-
 }
 .address-links li i{
 	font-size: 16px;
@@ -140,7 +134,7 @@ li{
 }
 .address-links{
 	    line-height: 32px;
-		color: #777777;
+		color: white;
 }
 .copy-right-sec{
 	padding: 1.8rem;
