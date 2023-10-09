@@ -1,7 +1,7 @@
 
     <div>
         <div class="container-fluid mt-5">
-            <div class="card" style="max-width: 45rem;margin-left: auto;margin-right: auto;">
+            <div class="card" style="margin-left: auto;margin-right: auto;">
                 <div class="card-body">
                     <h5 class="card-title">Flight booking</h5>
                     <div class="row">
@@ -9,85 +9,94 @@
                             <div class="input-group flex-nowrap">
                                 <span class="input-group-text" id="addon-wrapping">Full name</span>
                                 <input type="text" class="form-control" placeholder=" " aria-label="Username"
-                                    aria-describedby="addon-wrapping">
+                                    aria-describedby="addon-wrapping" ng-model="customer.fullName">
                             </div>
+                            <p ng-if="!customer.fullName" style="padding-left:3px;color:red">*fill out full name</p>
                         </div>
                         <div class="col-lg-6 md-12 mt-3">
                             <div class="input-group flex-nowrap">
                                 <span class="input-group-text" id="addon-wrapping">ID</span>
                                 <input type="text" class="form-control" placeholder=" " aria-label="Username"
-                                    aria-describedby="addon-wrapping">
+                                    aria-describedby="addon-wrapping" ng-model="customer.id">
                             </div>
+                            <p ng-if="!customer.id" style="padding-left:3px;color:red">*please fill out id</p>
                         </div>
-                        <div class="col-lg-6 md-12 mt-3">
+                        <div class="col-lg-6 md-12">
                             <div class="input-group flex-nowrap">
                                 <span class="input-group-text" id="addon-wrapping">Email</span>
                                 <input type="text" class="form-control" placeholder=" " aria-label="Username"
-                                    aria-describedby="addon-wrapping">
+                                    aria-describedby="addon-wrapping" ng-model=customer.email>
                             </div>
+                            <p style="padding-left:3px;color:red">*Please fill out email</p>
                         </div>
-                        <div class="col-lg-6 md-12 mt-3">
+                        <div class="col-lg-6 md-12">
                             <div class="input-group flex-nowrap">
                                 <span class="input-group-text" id="addon-wrapping">Gender</span>
                                 <div class="form-check mt-2">
                                     <input class="form-check-input ms-4" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault1">
+                                        id="flexRadioDefault1" value="Male" ng-model="customer.gender">
                                     <label class="form-check-label ms-2" for="flexRadioDefault1">
                                         Male
                                     </label>
                                 </div>
                                 <div class="form-check mt-2">
                                     <input class="form-check-input ms-4" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault2" checked>
+                                        id="flexRadioDefault1" checked>
                                     <label class="form-check-label ms-2" for="flexRadioDefault2">
                                         Female
                                     </label>
                                 </div>
                             </div>
+                            <p style="padding-left:3px;"></p>
                         </div>
-                        <div class="col-lg-6 md-12 mt-3">
+                        <div class="col-lg-6 md-12">
                             <div class="input-group flex-nowrap">
                                 <span class="input-group-text" id="addon-wrapping">Phone number</span>
                                 <input type="text" class="form-control" placeholder="" aria-label="Username"
-                                    aria-describedby="addon-wrapping">
+                                    aria-describedby="addon-wrapping" ng-model="customer.phonenumber">
                             </div>
+                            <p ng-if="!customer.phonenumber" style="padding-left:3px;color:red">*please fill out phone</p>
                         </div>
-                        <div class="col-lg-6 md-12 mt-3">
+                        <div class="col-lg-6 md-12 ">
                             <div class="input-group flex-nowrap">
                                 <span class="input-group-text" id="addon-wrapping">Choose flight</span>
-                                <select class="form-select" aria-label="Default select example">
+                                <select class="form-select" aria-label="Default select example" ng-model="customer.flight">
                                     <option selected>---Choose---</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                 </select>
                             </div>
+                            <p ng-if="!customer.flight" style="padding-left:3px;color:red">*validate flight</p>
                         </div>
-                        <div class="col-lg-6 md-12 mt-3">
+                        <div class="col-lg-6 md-12">
                             <div class="input-group flex-nowrap">
                                 <span class="input-group-text" id="addon-wrapping">Date of birth</span>
                                 <form action="/action_page.php">
-                                    <input type="date" id="birthday" name="birthday" style="height:40px;width: 190px;">
+                                    <input type="date" id="birthday" name="birthday" style="height:40px;width: 200px;" ng-model="customer.dob">
                                 </form>
                             </div>
+                            <p ng-if="!customer.dob" style="padding-left:3px;color:red">*Please fill out dob</p>
                         </div>
-                        <div class="col-lg-6 md-12 mt-3">
+                        <div class="col-lg-6 md-12">
                             <div class="input-group flex-nowrap">
                                 <span class="input-group-text" id="addon-wrapping">Luggage</span>
                                 <input type="text" class="form-control" placeholder=" " aria-label="Username"
-                                    aria-describedby="addon-wrapping">
-                            </div>
+                                    aria-describedby="addon-wrapping" ng-model="customer.luggage">
+                            </div><form action=""></form>
+                            <p ng-if="!customer.luggage" style="padding-left:3px;color:red">*Please fill out luggage</p>
                         </div>
-                        <div class="col-lg-6 md-12 mt-3">
+                        <div class="col-lg-6 md-12">
                             <div class="input-group flex-nowrap">
                                 <span class="input-group-text" id="addon-wrapping">Payment method</span>
                                 <input type="text" class="form-control" placeholder=" " aria-label="Username"
-                                    aria-describedby="addon-wrapping">
+                                    aria-describedby="addon-wrapping" ng-model="customer.payment">
                             </div>
+                            <p ng-if="!customer.payment" style="padding-left:3px;color:red">*Please fill payment</p>
                         </div>
                     </div>
                     <br>
-                    <a href="#" class="btn btn-primary" style="margin-left: 280px;">Submit form</a>
+                    <a href="#!/resultBooking" class="btn btn-primary" style="margin-left: 280px;" ng-click="submit(customer)">Submit form</a>
                 </div>
             </div>
         </div>

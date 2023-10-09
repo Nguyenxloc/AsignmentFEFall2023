@@ -1,0 +1,85 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "bookingRequest": [
+    {
+      "fullName": "Nguyễn Thị Linh",
+      "id": "ph18978",
+      "email": "linhnt@gmail.com",
+      "gender": "Male",
+      "phonenumber": "0374558555",
+      "flight": "2",
+      "dob": "2003-01-03T17:00:00.000Z",
+      "luggage": "1 vali kéo",
+      "payment": "Tiền mặt"
+    },
+    {
+      "id": "B4T4AQD"
+    },
+    {
+      "fullName": "dfasfdsfsdafsda",
+      "id": "fsdafasdfsdafsda",
+      "email": "fsdafsdafsdafsdafsda",
+      "gender": "Male",
+      "phonenumber": "fdsafsdafsdafsda",
+      "flight": "3",
+      "dob": "2023-10-04T17:00:00.000Z",
+      "luggage": "fdsafsdfsdafsdafsdafs",
+      "payment": "fsdafdsafasdfasfds"
+    },
+    {
+      "fullName": "viet",
+      "id": "11151515154",
+      "email": "viet@gmail.com",
+      "phonenumber": "0355588956",
+      "flight": "2",
+      "dob": "2023-10-05T17:00:00.000Z",
+      "luggage": "bag",
+      "payment": "tiền mặt"
+    },
+    {
+      "fullName": "fdfdsafsda",
+      "email": "fdsafsdafsd",
+      "id": "fsadfsdfdsa",
+      "gender": "Male",
+      "phonenumber": "fdasfsdafsda",
+      "flight": "3",
+      "dob": "2023-10-11T17:00:00.000Z",
+      "luggage": "fdsafdsafs",
+      "payment": "fsdafsad"
+    }
+  ],
+  "account": [
+    {
+      "fullName": "Nguyễn Phúc Lộc",
+      "email": "phuclocub@gmail.com",
+      "gender": "Nam",
+      "phone": "03742223222",
+      "dob": "02/03/2000",
+      "role": "customer"
+    },
+    {
+      "fullName": "Nguyễn Phúc Lộc",
+      "email": "locnp97@gmail.com",
+      "gender": "Nam",
+      "phone": "03742223222",
+      "dob": "02/03/2000",
+      "role": "admin"
+    }
+  ]
+}

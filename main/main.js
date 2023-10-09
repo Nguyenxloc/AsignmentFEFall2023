@@ -23,6 +23,13 @@ myRoutteApp.config(function($routeProvider){
                 controller: ContactController
             }
         )
+        .when(
+            '/resultBooking',
+            {
+                templateUrl:'views/resultBooking.html',
+                controller: ResultBookingController
+            }
+        )
         .otherwise(
             {
                 redirectTo: '/home',
