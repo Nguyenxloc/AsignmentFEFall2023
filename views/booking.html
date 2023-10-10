@@ -11,7 +11,8 @@
                                 <input type="text" class="form-control" placeholder=" " aria-label="Username"
                                     aria-describedby="addon-wrapping" ng-model="customer.fullName">
                             </div>
-                            <p ng-if="!customer.fullName" style="padding-left:3px;color:red">*fill out full name</p>
+                            <p ng-if="!fullNameCheck" style="padding-left:3px;color:red">{{fullNameCheck}}</p>
+                            <p ng-if="customer.fullName" style="padding-left:3px;color:green"><i class="bi bi-check-circle">checked</i></p>
                         </div>
                         <div class="col-lg-6 md-12 mt-3">
                             <div class="input-group flex-nowrap">
@@ -20,6 +21,7 @@
                                     aria-describedby="addon-wrapping" ng-model="customer.id">
                             </div>
                             <p ng-if="!customer.id" style="padding-left:3px;color:red">*please fill out id</p>
+                            <p ng-if="customer.id" style="padding-left:3px;color:green"><i class="bi bi-check-circle">checked</i></p>
                         </div>
                         <div class="col-lg-6 md-12">
                             <div class="input-group flex-nowrap">
@@ -27,7 +29,8 @@
                                 <input type="text" class="form-control" placeholder=" " aria-label="Username"
                                     aria-describedby="addon-wrapping" ng-model=customer.email>
                             </div>
-                            <p style="padding-left:3px;color:red">*Please fill out email</p>
+                            <p ng-if="!customer.email" style="padding-left:3px;color:red">*Please fill out email</p>
+                            <p ng-if="customer.email" style="padding-left:3px;color:green"><i class="bi bi-check-circle">checked</i></p>
                         </div>
                         <div class="col-lg-6 md-12">
                             <div class="input-group flex-nowrap">
@@ -56,6 +59,7 @@
                                     aria-describedby="addon-wrapping" ng-model="customer.phonenumber">
                             </div>
                             <p ng-if="!customer.phonenumber" style="padding-left:3px;color:red">*please fill out phone</p>
+                            <p ng-if="customer.phonenumber" style="padding-left:3px;color:green"><i class="bi bi-check-circle">checked</i></p>
                         </div>
                         <div class="col-lg-6 md-12 ">
                             <div class="input-group flex-nowrap">
@@ -68,6 +72,7 @@
                                 </select>
                             </div>
                             <p ng-if="!customer.flight" style="padding-left:3px;color:red">*validate flight</p>
+                            <p ng-if="customer.flight" style="padding-left:3px;color:green"><i class="bi bi-check-circle">checked</i></p>
                         </div>
                         <div class="col-lg-6 md-12">
                             <div class="input-group flex-nowrap">
@@ -77,6 +82,7 @@
                                 </form>
                             </div>
                             <p ng-if="!customer.dob" style="padding-left:3px;color:red">*Please fill out dob</p>
+                            <p ng-if="customer.dob" style="padding-left:3px;color:green"><i class="bi bi-check-circle">checked</i></p>
                         </div>
                         <div class="col-lg-6 md-12">
                             <div class="input-group flex-nowrap">
@@ -85,6 +91,7 @@
                                     aria-describedby="addon-wrapping" ng-model="customer.luggage">
                             </div><form action=""></form>
                             <p ng-if="!customer.luggage" style="padding-left:3px;color:red">*Please fill out luggage</p>
+                            <p ng-if="customer.luggage" style="padding-left:3px;color:green"><i class="bi bi-check-circle">checked</i></p>
                         </div>
                         <div class="col-lg-6 md-12">
                             <div class="input-group flex-nowrap">
@@ -93,10 +100,11 @@
                                     aria-describedby="addon-wrapping" ng-model="customer.payment">
                             </div>
                             <p ng-if="!customer.payment" style="padding-left:3px;color:red">*Please fill payment</p>
+                            <p ng-if="customer.payment" style="padding-left:3px;color:green"><i class="bi bi-check-circle">checked</i></p>
                         </div>
                     </div>
                     <br>
-                    <a href="#!/resultBooking" class="btn btn-primary" style="margin-left: 280px;" ng-click="submit(customer)">Submit form</a>
+                    <a class="btn btn-primary" style="margin-left: 280px;" ng-click="submit()">Submit form</a>
                 </div>
             </div>
         </div>
