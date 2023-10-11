@@ -3,11 +3,19 @@ window.BookingController = function ($scope, $http,$location) {
     const apiStudents = "http://localhost:3000/bookingRequest";
     var countNullError = 0;
     var submitCount =0;
+    $scope.fullNameCheck="*";
+    $scope.idCheck="*";
+    $scope.emailCheck="*";
+    $scope.phoneCheck="*";
+    $scope.flightCheck="*";
+    $scope.dobCheck="*";
+    $scope.luggageCheck="*";
+    $scope.paymentCheck="*"; 
     function checkNull(x){
         countNullError=0
         try{
             if(x.fullName){
-                
+                $scope.fullNameCheck="*";
             }
             if(x.fullName.trim() === ""){
                 countNullError++
@@ -20,7 +28,7 @@ window.BookingController = function ($scope, $http,$location) {
         }
         try{
             if(x.id){
-                
+                $scope.idCheck="*";
             }
             if(x.id.trim() === ""){
                 countNullError++
@@ -33,7 +41,7 @@ window.BookingController = function ($scope, $http,$location) {
         }
         try{
             if(x.email){
-;
+                $scope.emailCheck="*";
             }
             if(x.email.trim() === ""){
                 countNullError++
@@ -42,10 +50,11 @@ window.BookingController = function ($scope, $http,$location) {
         }
         catch(err){
             countNullError++
+            $scope.emailCheck="*Dont empty email field";
         }
         try{
             if(x.phonenumber){
-
+                $scope.phoneCheck="*";
             }
             if(x.phonenumber.trim() === ""){
                 countNullError++
@@ -54,10 +63,11 @@ window.BookingController = function ($scope, $http,$location) {
         }
         catch(err){
             countNullError++
+            $scope.phoneCheck="*Dont empty phone number";
         }
         try{
             if(x.flight){
-                
+                $scope.flightCheck="*";
             }
             if(x.flight.trim() === ""){
                 countNullError++
@@ -70,20 +80,20 @@ window.BookingController = function ($scope, $http,$location) {
         }
         try{
             if(x.dob){
-
+                $scope.dobCheck="*";
             }
-            if(x.dob.trim() === ""){
+            if(isNaN(x.dob)){
                 countNullError++
-                $scope.flightCheck="*Dont empty flight field";
+                $scope.dobCheck="*Dont empty dob field";
             }
         }
         catch(err){
             countNullError++
-            $scope.flightCheck="*Dont empty flight field";
+            $scope.dobCheck="*Dont empty dob field";
         }
         try{
             if(x.luggage){
-                
+                $scope.luggageCheck="*"
             }
             if(x.luggage.trim() === ""){
                 countNullError++
@@ -96,7 +106,7 @@ window.BookingController = function ($scope, $http,$location) {
         }
         try{
             if(x.payment){
-                
+                $scope.paymentCheck="*"; 
             }
             if(x.payment.trim() === ""){
                 countNullError++
@@ -119,17 +129,14 @@ window.BookingController = function ($scope, $http,$location) {
     function showMessage(){
     }
     $scope.submit = function () {
-        submitCount++;
-        if(submitCount === 1){
-            checkNull($scope.customer)
+        if(checkNull($scope.customer)===0){
+            console.log("do post");
+             $http.post((apiStudents),$scope.customer).then(function(respone){$location.path('/resultBooking')})
         }
-        // if(validateBooking()===0){
-        //     console.log("do post");
-        //      $http.post((apiStudents),x).success(function(respone){$location.path('/resultBooking')})
-        // }
-        // else{
-        //     console.log("do nothing");
-        //     //do nothing
-        // }
+        else{
+            console.log("do nothing");
+            //do fill out validate
+            
+        }
     }
 }
