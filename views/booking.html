@@ -1,7 +1,7 @@
 
     <div>
         <div class="container-fluid mt-5">
-            <div class="card" style="margin-left: auto;margin-right: auto;">
+            <div class="card" style="width: 900px; margin-left: auto;margin-right: auto;">
                 <div class="card-body">
                     <h5 class="card-title">Flight booking</h5>
                     <div class="row">
@@ -15,9 +15,9 @@
                         </div>
                         <div class="col-lg-6 md-12 mt-3">
                             <div class="input-group flex-nowrap">
-                                <span class="input-group-text" id="addon-wrapping">ID</span>
+                                <span class="input-group-text" id="addon-wrapping">Identification number</span>
                                 <input type="text" class="form-control" placeholder=" " aria-label="Username"
-                                    aria-describedby="addon-wrapping" ng-model="customer.id">
+                                    aria-describedby="addon-wrapping" ng-model="customer.idNo">
                             </div>
                             <p id="#message" ng-if="!$scope.idCheck" style="padding-left:3px;color:red">{{idCheck}}</p>
                         </div>
@@ -41,7 +41,7 @@
                                 </div>
                                 <div class="form-check mt-2">
                                     <input class="form-check-input ms-4" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault1" checked>
+                                        id="flexRadioDefault1" value="Female" ng-model="customer.gender" >
                                     <label class="form-check-label ms-2" for="flexRadioDefault2">
                                         Female
                                     </label>

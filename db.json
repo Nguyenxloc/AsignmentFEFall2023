@@ -18,89 +18,63 @@
   },
   "bookingRequest": [
     {
-      "fullName": "Nguyễn Thị Linh",
-      "id": "ph18978",
-      "email": "linhnt@gmail.com",
-      "gender": "Male",
-      "phonenumber": "0374558555",
-      "flight": "2",
-      "dob": "2003-01-03T17:00:00.000Z",
-      "luggage": "1 vali kéo",
-      "payment": "Tiền mặt"
-    },
-    {
-      "id": "B4T4AQD"
-    },
-    {
-      "fullName": "dfasfdsfsdafsda",
-      "id": "fsdafasdfsdafsda",
-      "email": "fsdafsdafsdafsdafsda",
-      "gender": "Male",
-      "phonenumber": "fdsafsdafsdafsda",
-      "flight": "3",
-      "dob": "2023-10-04T17:00:00.000Z",
-      "luggage": "fdsafsdfsdafsdafsdafs",
-      "payment": "fsdafdsafasdfasfds"
-    },
-    {
-      "fullName": "viet",
-      "id": "11151515154",
-      "email": "viet@gmail.com",
-      "phonenumber": "0355588956",
-      "flight": "2",
-      "dob": "2023-10-05T17:00:00.000Z",
-      "luggage": "bag",
-      "payment": "tiền mặt"
-    },
-    {
-      "fullName": "fdfdsafsda",
-      "email": "fdsafsdafsd",
-      "id": "fsadfsdfdsa",
-      "gender": "Male",
-      "phonenumber": "fdasfsdafsda",
-      "flight": "3",
-      "dob": "2023-10-11T17:00:00.000Z",
-      "luggage": "fdsafdsafs",
-      "payment": "fsdafsad"
-    },
-    {
-      "fullName": "fsdafsda",
-      "id": "fdsafdasf",
-      "email": "fdsafdas",
-      "gender": "Male",
-      "flight": "1",
-      "phonenumber": "fdasfsad",
-      "dob": "2023-10-13T17:00:00.000Z",
-      "luggage": "fdsafdsafsda",
-      "payment": "fsdfsafsad"
-    },
-    {
-      "fullName": "fdsafsda",
-      "id": "fdsafsad",
-      "email": "fdsafsa",
-      "flight": "2",
-      "phonenumber": "fsdfsda",
-      "dob": "2023-10-12T17:00:00.000Z",
-      "payment": "fdsafsdfa",
-      "luggage": "fsdafsda"
-    }
-  ],
-  "account": [
-    {
       "fullName": "Nguyễn Phúc Lộc",
+      "idNo": "123456789858",
       "email": "phuclocub@gmail.com",
-      "gender": "Nam",
-      "phone": "03742223222",
-      "dob": "02/03/2000",
-      "role": "customer"
+      "phonenumber": "0374555666",
+      "flight": "2",
+      "dob": "2023-10-20T17:00:00.000Z",
+      "luggage": "bag",
+      "payment": "cash",
+      "id": 1
     },
     {
-      "fullName": "Nguyễn Phúc Lộc",
-      "email": "locnp97@gmail.com",
-      "gender": "Nam",
-      "phone": "03742223222",
-      "dob": "02/03/2000",
-      "role": "admin"
+      "gender": "Male",
+      "fullName": "Nguyễn Thị Linh",
+      "idNo": "123456789125",
+      "phonenumber": "0374223222",
+      "flight": "2",
+      "dob": "2023-10-21T17:00:00.000Z",
+      "luggage": "bag",
+      "payment": "cash",
+      "email": "linh@gmail.com",
+      "id": 2
+    },
+    {
+      "fullName": "Nguyễn Vân Anh",
+      "idNo": "123456789125",
+      "email": "anh@gmail.com",
+      "gender": "Female",
+      "phonenumber": "0374555666",
+      "flight": "1",
+      "dob": "2023-10-20T17:00:00.000Z",
+      "luggage": "bag",
+      "payment": "cash",
+      "id": 3
+    },
+    {
+      "fullName": "Lê Thu Trang",
+      "idNo": "123456789123",
+      "email": "Trang@gmail.com",
+      "gender": "Female",
+      "phonenumber": "0374555222",
+      "flight": "1",
+      "dob": "2023-10-13T17:00:00.000Z",
+      "luggage": "bag",
+      "payment": "cash",
+      "id": 4
+    },
+    {
+      "fullName": "Lê Thị Huyền",
+      "idNo": "123456789125",
+      "email": "huyen@gmail.com",
+      "gender": "Male",
+      "phonenumber": "0374555666",
+      "flight": "2",
+      "dob": "2023-10-04T17:00:00.000Z",
+      "luggage": "bag",
+      "payment": "cash",
+      "id": 5
     }
   ]
 }

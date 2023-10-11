@@ -13,7 +13,7 @@
                     </div>
                     <div class="col-lg-6 md-12 mt-3">
                         <div class="input-group flex-nowrap">
-                            <label for="">ID:</label>
+                            <label for="">Identification number:</label>
                             <label for="" style="margin-left: 10px;">{{id}}</label>
                         </div>
                     </div>
@@ -44,7 +44,7 @@
                     <div class="col-lg-6 md-12 mt-3">
                         <div class="input-group flex-nowrap">
                             <label for="">Date of birth:</label>
-                            <label for="" style="margin-left: 10px;">{{dob}}</label>
+                            <label for="" style="margin-left: 10px;">{{dob | date: 'dd/MM/yyyy'}} </label>
                         </div>
                     </div>
                     <div class="col-lg-6 md-12 mt-3">
@@ -61,8 +61,8 @@
                     </div>
                     <div class="col-lg-6 md-12 mt-3">
                         <div class="input-group flex-nowrap">
-                            <label for="">Payment method:</label>
-                            <label for="" style="margin-left: 10px;color:green;font-weight: bold;">{{status}}</label>
+                            <label for="">Status:</label>
+                            <label for="" style="margin-left: 10px;color:green;font-weight: bold;">Success</label>
                         </div>
                     </div>
                 </div>
