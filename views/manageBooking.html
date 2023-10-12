@@ -1,0 +1,35 @@
+
+<div>
+    <div class="container-fluid mt-5">
+        <div class="card" style="max-width: 45rem;margin-left: auto;margin-right: auto;">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <table border="1px" >
+                    <tr>
+                        <td>Full name</td>
+                        <td>IdCard no</td>
+                        <td>Email</td>
+                        <td>Gender</td>
+                        <td>Phone Number</td>
+                        <td>FLight</td>
+                        <td>Dob</td>
+                        <td>Luggage</td>
+                        <td>Payment</td>
+                    </tr>
+                    <tr ng-repeat="item in bookingList">
+                        <td >{{ item.fullName }}</td>
+                        <td >{{ item.idNo }}</td>
+                        <td >{{ item.email }}</td>
+                        <td >{{ item.gender }}</td>
+                        <td >{{ item.phonenumber }}</td>
+                        <td >{{ item.flight }}</td>
+                        <td >{{ item.dob| date:'dd/MM/yyyy'}}</td>
+                        <td >{{ item.luggage }}</td>
+                        <td >{{ item.payment }}</td>
+                    </tr>
+                </table>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>

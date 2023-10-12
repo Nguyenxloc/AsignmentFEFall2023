@@ -76,5 +76,17 @@
       "payment": "cash",
       "id": 5
     }
+  ],
+  "account": [
+    {
+      "account": "phuclocub",
+      "password": "loc123",
+      "role": "admin"
+    },
+    {
+      "account": "linhnt",
+      "password": "linh123",
+      "role": "user"
+    }
   ]
 }

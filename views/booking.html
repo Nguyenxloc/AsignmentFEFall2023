@@ -47,7 +47,7 @@
                                     </label>
                                 </div>
                             </div>
-                            <p style="padding-left:3px;"></p>
+                            <p id="#message" ng-if="!$scope.emailCheck" style="padding-left:3px;color:red">{{genderCheck}}</p>
                         </div>
                         <div class="col-lg-6 md-12">
                             <div class="input-group flex-nowrap">
@@ -73,7 +73,7 @@
                             <div class="input-group flex-nowrap">
                                 <span class="input-group-text" id="addon-wrapping">Date of birth</span>
                                 <form action="/action_page.php">
-                                    <input type="date" id="birthday" name="birthday" style="height:40px;width: 200px;" ng-model="customer.dob">
+                                    <input type="date" id="birthday" name="birthday" style="height:40px;width: 315px;" ng-model="customer.dob">
                                 </form>
                             </div>
                             <p id="#message" ng-if="!$scope.dobCheck" style="padding-left:3px;color:red">{{dobCheck}}</p>

@@ -24,6 +24,20 @@ myRoutteApp.config(function($routeProvider){
             }
         )
         .when(
+            '/sercurity',
+            {
+                templateUrl:'views/sercurityPort.html',
+                controller: SercurityController
+            }
+        )
+        .when(
+            '/manage',
+            {
+                templateUrl:'views/manageBooking.html',
+                controller: ManageController
+            }
+        )
+        .when(
             '/resultBooking',
             {
                 templateUrl:'views/resultBooking.html',

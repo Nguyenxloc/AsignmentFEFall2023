@@ -77,11 +77,26 @@ window.BookingController = function ($scope, $http, $location) {
             countNullError++
             $scope.emailCheck = "*Dont empty email field";
         }
+
+        try {
+            if (x.gender) {
+                    $scope.genderCheck = "";
+            }
+            if (x.gender.trim() === "") {
+                countNullError++
+                $scope.genderCheck = "*please fill out gender";
+            }
+        }
+        catch (err) {
+            countNullError++
+            $scope.genderCheck = "*please fill out gender";
+        }
+
         try {
             if (x.phonenumber) {
                 if(!isVietnamesePhoneNumber(x.phonenumber)){
                     countNullError++;
-                    $scope.phoneCheck = "phone number is not correct";
+                    $scope.phoneCheck = "*phone number is not correct";
                 }
                 else{
                     $scope.phoneCheck = "";
