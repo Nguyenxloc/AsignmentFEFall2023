@@ -1,5 +1,8 @@
 
 let myRoutteApp  = angular.module('myApp', ['ngRoute']);
+myRoutteApp.run(function ($rootScope) { 
+    $rootScope.value = 0; 
+});
 myRoutteApp.config(function($routeProvider){
     $routeProvider
         .when(
@@ -38,10 +41,24 @@ myRoutteApp.config(function($routeProvider){
             }
         )
         .when(
+            '/user',
+            {
+                templateUrl:'views/userFrame.html',
+                controller: UserController
+            }
+        )
+        .when(
             '/resultBooking',
             {
                 templateUrl:'views/resultBooking.html',
                 controller: ResultBookingController
+            }
+        )
+        .when(
+            '/updateForm',
+            {
+                templateUrl:'views/updateForm.html',
+                controller: UpdateController
             }
         )
         .otherwise(

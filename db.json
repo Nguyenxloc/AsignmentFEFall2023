@@ -19,25 +19,14 @@
   "bookingRequest": [
     {
       "fullName": "Nguyễn Phúc Lộc",
-      "idNo": "123456789858",
-      "email": "phuclocub@gmail.com",
-      "phonenumber": "0374555666",
-      "flight": "2",
-      "dob": "2023-10-20T17:00:00.000Z",
-      "luggage": "bag",
-      "payment": "cash",
-      "id": 1
-    },
-    {
-      "gender": "Male",
-      "fullName": "Nguyễn Thị Linh",
       "idNo": "123456789125",
+      "email": "phuclocub@gmail.com",
+      "gender": "Male",
       "phonenumber": "0374223222",
       "flight": "2",
-      "dob": "2023-10-21T17:00:00.000Z",
-      "luggage": "bag",
+      "dob": "2023-10-05T17:00:00.000Z",
+      "luggage": "Bag",
       "payment": "cash",
-      "email": "linh@gmail.com",
       "id": 2
     },
     {
@@ -75,18 +64,6 @@
       "luggage": "bag",
       "payment": "cash",
       "id": 5
-    },
-    {
-      "fullName": "Nguye Thi Van",
-      "idNo": "123456789125",
-      "gender": "Male",
-      "email": "van@gmail.com",
-      "phonenumber": "0374555666",
-      "flight": "2",
-      "dob": "2023-10-26T17:00:00.000Z",
-      "luggage": "bag",
-      "payment": "cash",
-      "id": 6
     },
     {
       "email": "linhnt@gmail.com",

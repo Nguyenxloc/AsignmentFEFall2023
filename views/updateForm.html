@@ -1,0 +1,103 @@
+
+<div>
+    <div class="container-fluid mt-5">
+        <div class="card" style="width: 900px; margin-left: auto;margin-right: auto;">
+            <div class="card-body">
+                <h5 class="card-title">Flight booking</h5>
+                <div class="row">
+                    <div class="col-lg-6 md-12 mt-3">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text" id="addon-wrapping">Full name</span>
+                            <input type="text" class="form-control" placeholder=" " aria-label="Username"
+                                aria-describedby="addon-wrapping" ng-model="customer.fullName">
+                        </div>
+                        <p ng-if="!$scope.fullNameCheck" style="padding-left:3px;color:red">{{fullNameCheck}}</p>
+                    </div>
+                    <div class="col-lg-6 md-12 mt-3">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text" id="addon-wrapping">Identification number</span>
+                            <input type="text" class="form-control" placeholder=" " aria-label="Username"
+                                aria-describedby="addon-wrapping" ng-model="customer.idNo">
+                        </div>
+                        <p id="#message" ng-if="!$scope.idCheck" style="padding-left:3px;color:red">{{idCheck}}</p>
+                    </div>
+                    <div class="col-lg-6 md-12">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text" id="addon-wrapping">Email</span>
+                            <input type="text" class="form-control" placeholder=" " aria-label="Username"
+                                aria-describedby="addon-wrapping" ng-model=customer.email>
+                        </div>
+                        <p id="#message" ng-if="!$scope.emailCheck" style="padding-left:3px;color:red">{{emailCheck}}</p>
+                    </div>
+                    <div class="col-lg-6 md-12">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text" id="addon-wrapping">Gender</span>
+                            <div class="form-check mt-2">
+                                <input class="form-check-input ms-4" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" value="Male" ng-model="customer.gender">
+                                <label class="form-check-label ms-2" for="flexRadioDefault1">
+                                    Male
+                                </label>
+                            </div>
+                            <div class="form-check mt-2">
+                                <input class="form-check-input ms-4" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" value="Female" ng-model="customer.gender" >
+                                <label class="form-check-label ms-2" for="flexRadioDefault2">
+                                    Female
+                                </label>
+                            </div>
+                        </div>
+                        <p id="#message" ng-if="!$scope.emailCheck" style="padding-left:3px;color:red">{{genderCheck}}</p>
+                    </div>
+                    <div class="col-lg-6 md-12">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text" id="addon-wrapping">Phone number</span>
+                            <input type="text" class="form-control" placeholder="" aria-label="Username"
+                                aria-describedby="addon-wrapping" ng-model="customer.phonenumber">
+                        </div>
+                        <p id="#message" ng-if="!$scope.phoneCheck" style="padding-left:3px;color:red">{{phoneCheck}}</p>
+                    </div>
+                    <div class="col-lg-6 md-12">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text" id="addon-wrapping">Choose flight</span>
+                            <select class="form-select" aria-label="Default select example" ng-model="customer.flight">
+                                <option selected>---Choose---</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <p id="#message" ng-if="!$scope.flightCheck" style="padding-left:3px;color:red">{{flightCheck}}</p>
+                    </div>
+                    <div class="col-lg-6 md-12">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text" id="addon-wrapping">Date of birth</span>
+                            <form action="/action_page.php">
+                                <input type="date" id="birthday" name="birthday" style="height:40px;width: 315px;" ng-model="customer.dob">
+                            </form>
+                        </div>
+                        <p id="#message" ng-if="!$scope.dobCheck" style="padding-left:3px;color:red">{{dobCheck}}</p>
+                    </div>
+                    <div class="col-lg-6 md-12">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text" id="addon-wrapping">Luggage</span>
+                            <input type="text" class="form-control" placeholder=" " aria-label="Username"
+                                aria-describedby="addon-wrapping" ng-model="customer.luggage">
+                        </div><form action=""></form>
+                        <p id="#message" ng-if="!$scope.luggageCheck" style="padding-left:3px;color:red">{{luggageCheck}}</p>
+                    </div>
+                    <div class="col-lg-6 md-12">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text" id="addon-wrapping">Payment method</span>
+                            <input type="text" class="form-control" placeholder=" " aria-label="Username"
+                                aria-describedby="addon-wrapping" ng-model="customer.payment">
+                        </div>
+                        <p id="#message" ng-if="! $scope.paymentCheck" style="padding-left:3px;color:red">{{paymentCheck}}</p>
+                    </div>
+                </div>
+                <br>
+                <a class="btn btn-primary" style="margin-left: 280px;" ng-click="update()">Submit form</a>
+            </div>
+        </div>
+    </div>
+</div>
