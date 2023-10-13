@@ -75,6 +75,30 @@
       "luggage": "bag",
       "payment": "cash",
       "id": 5
+    },
+    {
+      "fullName": "Nguye Thi Van",
+      "idNo": "123456789125",
+      "gender": "Male",
+      "email": "van@gmail.com",
+      "phonenumber": "0374555666",
+      "flight": "2",
+      "dob": "2023-10-26T17:00:00.000Z",
+      "luggage": "bag",
+      "payment": "cash",
+      "id": 6
+    },
+    {
+      "email": "linhnt@gmail.com",
+      "idNo": "123456789124",
+      "phonenumber": "0374555666",
+      "fullName": "Nguyen thi linh",
+      "gender": "Female",
+      "flight": "2",
+      "dob": "2023-10-05T17:00:00.000Z",
+      "luggage": "Vali",
+      "payment": "Tien mat",
+      "id": 7
     }
   ],
   "account": [

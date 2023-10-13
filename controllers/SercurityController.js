@@ -8,22 +8,30 @@ window.SercurityController = function($scope,$http,$location){
         // var date = new Date(obj0.dob);
     })
     $scope.login=function(){
-        $scope.message = " "
-        console.log($scope.acc.pass);
         
-        for (let index = 0; index < accArr.length; index++) {
-            if($scope.acc.user===accArr[index].account&&$scope.acc.pass===accArr[index].password){
-                if(accArr[index].role==="admin"){
-                    $http.get(apiStudents).then(function (respone) { $location.path('/manage') })
+        try {
+            for (let index = 0; index < accArr.length; index++) {
+                if($scope.acc.user===accArr[index].account&&$scope.acc.pass===accArr[index].password){
+                    if(accArr[index].role==="admin"){
+                        $scope.message = ""
+                        $http.get(apiStudents).then(function (respone) { $location.path('/manage') })
+                    }
+                    else{
+                        $scope.message = "*you not have priority to access"
+                        console.log($scope.message)
+                    }
                 }
                 else{
-                    $scope.message = "*you not have priority to access"
+                    $scope.message = "*UserName or Password is not correct"
+                    console.log($scope.message)
                 }
             }
-            else{
-                $scope.message = "*UserName or Password is not correct"
-            }
         }
+        catch (err) {
+            $scope.message = "*UserName or Password is not correct"
+            console.log($scope.message)
+        }
+       
     }
     
 }
