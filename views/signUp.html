@@ -1,0 +1,85 @@
+
+<div>
+    <div class="container-fluid mt-5">
+        <div class="card" style="width: 900px; margin-left: auto;margin-right: auto;">
+            <div class="card-body">
+                <h5 class="card-title">{{title}}</h5>
+                <div class="row">
+                    <div class="col-lg-6 md-12 mt-3">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text" id="addon-wrapping">Full name</span>
+                            <input type="text" class="form-control" placeholder=" " aria-label="Username"
+                                aria-describedby="addon-wrapping" ng-model="user.fullName">
+                        </div>
+                        <p ng-if="!$scope.fullNameCheck" style="padding-left:3px;color:red">{{fullNameCheck}}</p>
+                    </div>
+                    <div class="col-lg-6 md-12 mt-3">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text" id="addon-wrapping">Phone number</span>
+                            <input type="text" class="form-control" placeholder=" " aria-label="Username"
+                                aria-describedby="addon-wrapping" ng-model="user.phonenumber">
+                        </div>
+                        <p id="#message" ng-if="!$scope.phoneCheck" style="padding-left:3px;color:red">{{phoneCheck}}</p>
+                    </div>
+                    <div class="col-lg-6 md-12">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text" id="addon-wrapping">Email</span>
+                            <input type="text" class="form-control" placeholder=" " aria-label="Username"
+                                aria-describedby="addon-wrapping" ng-model=user.email>
+                        </div>
+                        <p id="#message" ng-if="!$scope.emailCheck" style="padding-left:3px;color:red">{{emailCheck}}</p>
+                    </div>
+                    <div class="col-lg-6 md-12">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text" id="addon-wrapping">Gender</span>
+                            <div class="form-check mt-2">
+                                <input class="form-check-input ms-4" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" value="Male" ng-model="user.gender">
+                                <label class="form-check-label ms-2" for="flexRadioDefault1">
+                                    Male
+                                </label>
+                            </div>
+                            <div class="form-check mt-2">
+                                <input class="form-check-input ms-4" type="radio" name="flexRadioDefault"
+                                id="flexRadioDefault1" value="Female" ng-model="user.gender" >
+                                <label class="form-check-label ms-2" for="flexRadioDefault2">
+                                    Female
+                                </label>
+                            </div>
+                        </div>
+                        <p id="#message" ng-if="!$scope.emailCheck" style="padding-left:3px;color:red">{{genderCheck}}</p>
+                    </div>
+                    <div class="col-lg-6 md-12">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text" id="addon-wrapping">Password</span>
+                            <input type="password" class="form-control" placeholder="" aria-label="Username"
+                            aria-describedby="addon-wrapping" ng-model="user.pass">
+                        </div>
+                        <p id="#message" ng-if="!$scope.phoneCheck" style="padding-left:3px;color:red">{{passCheck}}</p>
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text" id="addon-wrapping">Correct password</span>
+                                <input type="password" class="form-control" placeholder="" aria-label="Username"
+                                aria-describedby="addon-wrapping" ng-model="user.correctPass">
+                        </div>
+                        <p id="#message" ng-if="!$scope.dobCheck" style="padding-left:3px;color:red">{{correctPassCheck}}</p>
+                    </div>
+                    <div class="col-lg-6 md-12">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text" id="addon-wrapping">Date of birth</span>
+                            <input type="date" id="birthday" name="birthday" style="height:40px;width: 315px;" ng-model="user.dob">
+                        </div>
+                        <p id="#message" ng-if="!$scope.dobCheck" style="padding-left:3px;color:red">{{dobCheck}}</p>
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text" id="addon-wrapping">Working field</span>
+                            <input type="text" class="form-control" placeholder=" " aria-label="Username"
+                            aria-describedby="addon-wrapping" ng-model="user.wfield">
+                        </div><form action=""></form>
+                        <p id="#message" ng-if="!$scope.wfieldCheck" style="padding-left:3px;color:red">{{wfieldCheck}}</p>
+                    </div>
+                </div>
+                <br>
+                <a class="btn btn-primary" style="margin-left: 280px;" ng-click="register()">Register</a>
+            </div>
+        </div>
+    </div>
+</div>

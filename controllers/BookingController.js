@@ -175,10 +175,9 @@ window.BookingController = function ($scope, $http, $location) {
     function showMessage() {
     }
     $scope.submit = function () {
-        
         if (validate($scope.customer) === 0) {
             console.log("do post");
-            $http.post((apiStudents), $scope.customer).then(function (respone) { $location.path('/resultBooking') })
+            $http.post((apiStudents), $scope.customer).then(function (respone) { $location.path('/resultBooking')})
         }
         else {
             console.log("do nothing");

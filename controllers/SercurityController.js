@@ -10,7 +10,7 @@ window.SercurityController = function($scope,$http,$location){
     $scope.login=function(){
         try {
             for (let index = 0; index < accArr.length; index++) {
-                if($scope.acc.user===accArr[index].account&&$scope.acc.pass===accArr[index].password){
+                if($scope.acc.user===accArr[index].email&&$scope.acc.pass===accArr[index].pass){
                     if(accArr[index].role==="admin"){
                         $scope.message = ""
                         $http.get(apiStudents).then(function (respone) { $location.path('/manage') })

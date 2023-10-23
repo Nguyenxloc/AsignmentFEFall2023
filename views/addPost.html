@@ -1,0 +1,23 @@
+<div>
+    <div class="row">
+        
+        <div class="col-lg-8 md-12 mt-3" id="content">
+            <h2>Add post</h2>
+            <div class="input-group flex-nowrap">
+                <textarea id="tittle" type="text" class="form-control" placeholder="Please fill out titles" aria-label="Username"
+                    aria-describedby="addon-wrapping" style="font-size:24px;height:80px;"
+                    ng-model="news.num1" ng-click ='event=$event' ></textarea>
+            </div>
+        </div>
+       
+        <div class="col-lg-4 md-12 mt-3" >
+            <h2>Edit tool</h2>
+            <a class="btn btn-primary" ng-click="addPara()" style="width:123px">Add paragraph</a>
+            <a class="btn btn-primary" ng-click="addImg()" style="width:123px;">Add image</a>
+            <a class="btn btn-danger" ng-click="addImg()" style="width:123px;">Delete</a>
+            <a class="btn btn-dark" ng-click="addImg()" style="width:123px;">Redo</a>
+        </div>
+    </div>
+    <br>
+    <a class="btn btn-primary" style="margin-left:550px;" ng-click="test($event)">Submit form</a>
+</div>

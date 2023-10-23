@@ -2,6 +2,7 @@
 let myRoutteApp  = angular.module('myApp', ['ngRoute']);
 myRoutteApp.run(function ($rootScope) { 
     $rootScope.value = 0; 
+    $rootScope.author = "phuclocub";
 });
 myRoutteApp.config(function($routeProvider){
     $routeProvider
@@ -59,6 +60,41 @@ myRoutteApp.config(function($routeProvider){
             {
                 templateUrl:'views/updateForm.html',
                 controller: UpdateController
+            }
+        )
+        .when(
+            '/review',
+            {
+                templateUrl: 'views/review.html',
+                controller: ReviewController
+            }
+        )
+        .when(
+            '/addPost',
+            {
+                templateUrl: 'views/addPost.html',
+                controller: AddPostController
+            }   
+        )
+        .when(
+            '/postManage',
+            {
+                templateUrl: 'views/postManagement.html',
+                controller: PostManageController
+            }   
+        )
+        .when(
+            '/signUp',
+            {
+                templateUrl : 'views/signUp.html',
+                controller: SignUpController
+            }
+        )
+        .when(
+            '/messageResult',
+            {
+                templateUrl: 'views/message.html',
+                controller:  MessageController
             }
         )
         .otherwise(
